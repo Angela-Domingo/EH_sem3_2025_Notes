@@ -172,3 +172,41 @@
 
 - Script: Python (≤15 lines)  
 - Scans: Ports 1–100
+
+# API (Application Programming Interface)
+
+## What is an API?
+
+An **API (Application Programming Interface)** is a set of rules that allows different software applications to communicate with each other. It defines how requests and responses should be made, what data formats to use, and how different components interact.
+
+In simple terms, an API acts like a **messenger** that takes requests from one system, tells another system what to do, and returns the response.
+
+Example: When you log in using Google on a third-party app, that app is using Google’s API to authenticate your credentials.
+
+---
+
+## Types of APIs
+
+- **REST API** – Uses HTTP methods (GET, POST, PUT, DELETE), commonly used on the web.  
+- **SOAP API** – Uses XML messages and is more structured.  
+- **GraphQL** – Allows clients to request exactly the data they need.  
+- **WebSocket API** – Enables real-time communication.  
+
+---
+
+## Uses of APIs
+
+- **Integration**: Connect different systems or services (e.g., payment gateways, social logins).  
+- **Communication**: Enable software components to talk to each other.  
+- **Data Access**: Retrieve or send data from/to servers or databases (e.g., weather, news, stock APIs).  
+- **Automation**: Trigger actions or workflows (e.g., sending emails, scheduling tasks).  
+- **Microservices**: Connect and coordinate between independent services in distributed architectures.  
+
+---
+
+## Example Use Case
+
+A weather app uses the OpenWeatherMap API to fetch current temperature data by sending an HTTP request like:
+
+```http
+GET https://api.openweathermap.org/data/2.5/weather?q=London&appid=YOUR_API_KEY
